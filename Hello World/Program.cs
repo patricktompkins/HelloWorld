@@ -81,7 +81,7 @@ namespace Hello_World
 
             ////Part Ten string length examples
 
-            int messOneLength = messageOne.Length;
+            /*int messOneLength = messageOne.Length;
             int messTwoLength = messageTwo.Length;
 
             Console.WriteLine("The length of messageOne is " + messageOne.Length);
@@ -94,10 +94,10 @@ namespace Hello_World
              string city1 = "Vesuvius";
              string city2 = "Nola";
              string city3 = "Nuceria";
-             int city1Distance, city2Distance, city3Distance;
+             int city1Distance, city2Distance, city3Distance;*/
 
              //Solicit user input example
-             Console.WriteLine("What is the distance to {0}?", city1);
+            /* Console.WriteLine("What is the distance to {0}?", city1);
              city1Distance = int.Parse(Console.ReadLine());
              Console.WriteLine("What is the distance to " + city2 + "?");
              city2Distance = int.Parse(Console.ReadLine());
@@ -131,7 +131,7 @@ namespace Hello_World
             //int age = int.Parse(Console.ReadLine());
 
             //Console.WriteLine("What is your job soldier?");
-            string job = Console.ReadLine();
+            //string job = Console.ReadLine();
 
             //if ((rank == "officer") || (age <= 26))
             //{
@@ -152,7 +152,7 @@ namespace Hello_World
 
 
 
-            switch (job)
+            /*switch (job)
             {
                 case "infantry":
                     Console.WriteLine("You will carry a sword");
@@ -172,8 +172,59 @@ namespace Hello_World
 
                 default:
                     Console.WriteLine("You will ride horseback");
-                    break;
-            }
+                    break;*/
+
+            /*Part 14
+            string[] Array = new int[0];*/
+
+           string[] foodList = new string[5];
+            foodList[0] = "Milk";
+            foodList[1] = "fruit";
+            foodList[2] = "Meat";
+            foodList[3] = "Wine";
+            foodList[4] = "Bread";
+
+            //Console.WriteLine("{0}, {1}, {2}, {3}, {4}", foodList[0], foodList[1], foodList[2], foodList[3], foodList[4]);
+
+            int[] foodAmount = new int[5];
+            foodAmount[0] = 1000;
+            foodAmount[1] = 100;
+            foodAmount[2] = 2000;
+            foodAmount[3] = 10000;
+            foodAmount[4] = 1500;
+
+            //Option 1 to Print
+            Console.WriteLine("{0}, {1}, {2}, {3}, {4}", foodAmount[0], foodAmount[1], foodAmount[2], foodAmount[3], foodAmount[4]);
+
+            //Option 2 to Print with Concatation
+            Console.WriteLine(foodList[0] + "; "+ foodAmount[0] + "; " + foodList[1] + "; " + foodAmount[1] + "; " + foodList[2] + "; " + foodAmount[2] + "; " + foodList[3] + "; " + foodAmount[3] + "; " + foodList[4] + "; " + foodAmount[4]);
+            Console.WriteLine(); // adding space on the printout
+
+            //.Length
+            Console.WriteLine(foodList.Length);
+            Console.WriteLine();  // adding space on the printout
+
+
+
+            string[] elements = messageTwo.Split(' ');
+            Console.WriteLine(elements[0]); //Print "I
+            Console.WriteLine(elements[1]); //print "am"
+            Console.WriteLine(elements[2]); // "Spartacus"
+
+            //letters[1] = 'e'; if i want to change the char to e
+            //letters[2] = 'e'; if i want to change the char to e
+
+
+            String myName = "Sue";
+            Char[] letters = myName.ToCharArray();
+            
+            Console.WriteLine("The first letter of my name is " + letters[0]);
+            Console.WriteLine("The first letter of my name is " + letters[1]);
+            Console.WriteLine("The first letter of my name is " + letters[2]);
+
+
+
+
         }
     }
 }
