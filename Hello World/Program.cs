@@ -204,7 +204,7 @@ namespace Hello_World
             Console.WriteLine(foodList.Length);
             Console.WriteLine();  // adding space on the printout
 
-
+            
 
             string[] elements = messageTwo.Split(' ');
             Console.WriteLine(elements[0]); //Print "I
